@@ -34,8 +34,8 @@ class _HomePageState extends State<HomePage> {
                     var json = jsonEncode(userMap);
                     print(json.toString());
                   },
-                  child: Text("Serialization")),
-              SizedBox(
+                  child: const Text("Serialization")),
+              const SizedBox(
                 width: 20,
               ),
               ElevatedButton(
@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
                     UserModel newUser = UserModel.fromMap(userMap);
                     print(newUser.toString());
                   },
-                  child: Text("Deserialization"))
+                  child: const Text("Deserialization"))
             ],
           ),
         ),
